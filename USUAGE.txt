@@ -1,0 +1,4 @@
+Version 0.0.2
+
+1) use entryv2.py to enter cartridge names to the JSON database
+2) run qr.py to generate the qr codes

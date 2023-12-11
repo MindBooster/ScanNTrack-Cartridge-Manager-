@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Printer Cartridges Return  Dashboard</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#inventory">Inventory</a></li>
+      <li><a href="#issue">Issue</a></li>
+      <li><a href="#return">Return</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+
+    <section id="issue">
+      <h1>Issue</h1>
+      <form method="post" action="issue_cartridge.php">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+
+        <label for="model">Cartridge Model:</label>
+        <select name="model" id="model">
+          <option value="Model 1">Model 1</option>
+          <option value="Model 2">Model 2</option>
+          <option value="Model 3">Model 3</option>
+        </select>
+
+        <button type="submit">Issue Cartridge</button>
+      </form>
+    </section>
+
+    <section id="return">
+      <h1>Return</h1>
+      <form method="post" action="return_cartridge.php">
+        <label for="model">Cartridge Model:</label>
+        <select name="model" id="model">
+          <option value="Model 1">Model 1</option>
+          <option value="Model 2">Model 2</option>
+          <option value="Model 3">Model 3</option>
+        </select>
+
+        <button type="submit">Return Cartridge</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
